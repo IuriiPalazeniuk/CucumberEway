@@ -1,4 +1,5 @@
 Feature: Find way to the Privokzalna street
+
   Scenario:Find way
     Given I go to easyWay page
     And I chose Vinnitsa city

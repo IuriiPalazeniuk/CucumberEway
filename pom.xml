@@ -47,7 +47,7 @@
                             <projectName>cucumber-jvm-example</projectName>
                             <outputDirectory>${project.build.directory}/cucumberReport</outputDirectory>
                             <cucumberOutput>${project.build.directory}/cucumber-html-reports/cucumber.json</cucumberOutput>
-                            <skippedFails>true</skippedFails>
+
                         </configuration>
                     </execution>
                 </executions>

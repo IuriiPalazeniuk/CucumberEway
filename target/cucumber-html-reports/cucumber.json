@@ -3,56 +3,93 @@
     "line": 1,
     "elements": [
       {
-        "line": 2,
+        "before": [
+          {
+            "result": {
+              "duration": 9525633123,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyStepdefs.setUp()"
+            }
+          }
+        ],
+        "line": 3,
         "name": "Find way",
         "description": "",
         "id": "find-way-to-the-privokzalna-street;find-way",
+        "after": [
+          {
+            "result": {
+              "duration": 1434814999,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyStepdefs.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 9087888554,
+              "status": "passed"
             },
-            "line": 3,
+            "line": 4,
             "name": "I go to easyWay page",
-            "match": {},
+            "match": {
+              "location": "MyStepdefs.iGoToEasyWayPage()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 5385147722,
+              "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "I chose Vinnitsa city",
-            "match": {},
+            "match": {
+              "location": "MyStepdefs.iChoseVinnitsaCity()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2977126577,
+              "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "Add streets",
-            "match": {},
+            "match": {
+              "location": "MyStepdefs.addStreets()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 333990975,
+              "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "Press make a route",
-            "match": {},
+            "match": {
+              "location": "MyStepdefs.pressMakeARoute()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1314973948,
+              "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "I check best result",
-            "match": {},
+            "match": {
+              "location": "MyStepdefs.iCheckBestResult()"
+            },
             "keyword": "Then "
           }
         ]

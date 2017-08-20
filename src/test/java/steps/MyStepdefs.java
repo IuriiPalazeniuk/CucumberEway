@@ -1,4 +1,5 @@
-import cucumber.api.PendingException;
+package steps;
+
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -16,13 +17,15 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Acer on 14.08.2017.
  */
+
+
 public class MyStepdefs {
 
     static WebDriver driver;
 
     private String choseCity = ".//*[@id='city']";
     private String vinnitsa = ".//*[@id='cities-link-vinnytsia']";
-    private String easyWay = "hhtp://eway.in.ua";
+    private String easyWay = "http://eway.in.ua";
     private String startStreet = ".//*[@id='from']";
     private String addSreetFrom = "html/body/div[2]/ul/li[1]";
     private String addStreetTo = "html/body/div[3]/ul/li[1]";
@@ -37,6 +40,7 @@ public class MyStepdefs {
         ChromeDriverManager.getInstance().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
     }
     @Given("^I go to easyWay page$")
     public void iGoToEasyWayPage(){
@@ -63,7 +67,7 @@ public class MyStepdefs {
 
     @Then("^I check best result$")
     public void iCheckBestResult(){
-        Assert.assertTrue(driver.findElements( By.id(bestResult) ).size() != 0);
+        Assert.assertTrue(driver.findElements( By.xpath(bestResult) ).size() != 0);
     }
 
     @After
